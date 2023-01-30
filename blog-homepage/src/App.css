@@ -1,3 +1,63 @@
+.article-row{
+  text-align: left;
+  margin: 1rem
+}
+.your-articles-container{
+  display: grid
+}
+.article-card-your{
+  display:flex;
+  gap:1rem;
+}
+
+.article-card-missed{
+  display:flex;
+  gap:1rem;
+}
+
+.article-text{
+
+}
+.article-image{
+  max-width: 15rem;
+  height: 100%;
+}
+.article-body{
+  text-align: left;
+}
+.article-details{
+  display: flex;
+  gap: 1rem;
+  align-items: center
+}
+.article-body > p{
+  color:#7c7c7c;
+  font-size: 12px
+}
+
+
+.author-image{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+.detail-info{
+  text-align: left;
+}
+.date-minute-container{
+  display: flex;
+  gap: 0.3rem;
+}
+.date-minute-container > p {
+  color:#7c7c7c
+}
+
+
+
 .App {
   text-align: center;
 }

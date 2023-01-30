@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 function ArticleBody({ title, description }){
     return (
         <div className='article-body'>
-            <h2 className='article-body-title'>{title}</h2>
-            <h2 className='article-body-description'>{description}</h2>
+            <h3 className='article-body-title'>{title}</h3>
+            <p className='article-body-description'>{description}</p>
         </div>
 
     )
