@@ -5,28 +5,33 @@ import ArticleDetails from './ArticleDetails';
 
 function ArticleCard ({ article, articleType }){
     // console.log(article)
-    const {title, description, image, author, postedDate, minutesToRead } = article
+    const {title, description, image, author, postedDate, minutesToRead, hasAudioAvailable, link } = article
     // const {name, image} = author
         
     return (
-        <div className={`article-card-${articleType}`}>
-            <ArticleImage
-            image={image}
-            altDescription={title}
-            />
-            <div class='article-text'>
-                <ArticleBody
-                title={title}
-                description={description}
+        // EXTRA CREDIT
+        <a href={link}>
+            <div className={`article-card-${articleType}`}>
+                <ArticleImage
+                image={image}
+                altDescription={title}
                 />
-                <ArticleDetails
-                authorImage={author.image}
-                authorName={author.name}
-                postedDate={postedDate}
-                minutesToRead={minutesToRead}
-                />
+                <div class='article-text'>
+                    <ArticleBody
+                    title={title}
+                    description={description}
+                    hasAudioAvailable={hasAudioAvailable}
+                    
+                    />
+                    <ArticleDetails
+                    authorImage={author.image}
+                    authorName={author.name}
+                    postedDate={postedDate}
+                    minutesToRead={minutesToRead}
+                    />
+                </div>
             </div>
-        </div>
+        </a>
     )
 }
 
