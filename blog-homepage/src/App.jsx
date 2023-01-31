@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const yourArticles = YourArticles.map((article, index) => {
     return (
-      <div key={index}>
+      <div className='article-card-container' key={index}>
         <ArticleCard
           article={article}
           articleType='your'
@@ -17,7 +17,7 @@ function App() {
   });
   const missedArticles = MissedArticles.map((article, index) => {
     return (
-      <div key={index}>
+      <div className='article-card-container' key={index}>
         <ArticleCard
           article={article}
           articleType='missed'
@@ -28,21 +28,19 @@ function App() {
 
   return(
     <div className="App">
-      <div className='your-articles-container'>
       <ArticleRow
         rowName='For you'
       />
-        <ul>
-          {yourArticles}
-        </ul>
+      <div class="line"></div>
+      <div className='your-articles-container'>
+        {yourArticles}
       </div>
       <ArticleRow
         rowName='In case you missed it'
       />
+      <div class="line"></div>
       <div className='missed-articles-container'>
-        <ul>
           {missedArticles}
-        </ul>
       </div>
 
     </div>

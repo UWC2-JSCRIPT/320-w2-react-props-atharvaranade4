@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 function ArticleImage({ image, altDescription }){
     return (
-      <img className = 'article-image' src = {image} alt={altDescription}/>
+        <div className='article-image-container'>
+            <img className = 'article-image' src={image} alt={altDescription}/>
+        </div>
 
     )
 }

@@ -20,9 +20,12 @@ function ArticleDetails({ authorImage, authorName, postedDate, minutesToRead }){
             </div>
             <div className = 'detail-info'>
                 <div>{ authorName }</div>
-                <div className='date-minute-container'>
-                    <p>{ formatDate(postedDate)} •</p>
-                    <p> { minutesToRead } min read</p>
+                <div className='info-container'>
+                    <div className='date-minute-container'>
+                        <p>{ formatDate(postedDate)} •</p>
+                        <p> { minutesToRead } min read</p>
+                    </div>
+                    <img className='article-bookmark' src='https://cdn-icons-png.flaticon.com/512/494/494568.png' alt='bookmark'/>
                 </div>
             </div>
         </div>

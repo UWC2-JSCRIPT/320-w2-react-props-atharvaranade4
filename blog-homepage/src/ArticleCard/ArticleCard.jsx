@@ -5,11 +5,11 @@ import ArticleDetails from './ArticleDetails';
 
 function ArticleCard ({ article, articleType }){
     // console.log(article)
-    const {title, description, image, author, postedDate, minutesToRead, hasAudioAvailable, link } = article
+    const {title, description, image, author, postedDate, minutesToRead, hasAudioAvailable, link, memberPreview } = article
     // const {name, image} = author
         
     return (
-        // EXTRA CREDIT
+        // BONUS
         <a href={link}>
             <div className={`article-card-${articleType}`}>
                 <ArticleImage
@@ -21,6 +21,7 @@ function ArticleCard ({ article, articleType }){
                     title={title}
                     description={description}
                     hasAudioAvailable={hasAudioAvailable}
+                    memberPreview={memberPreview}
                     
                     />
                     <ArticleDetails
